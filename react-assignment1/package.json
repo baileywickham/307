@@ -1,5 +1,6 @@
 {
     "homepage": "https://baileywickham.github.io/307",
+    "repo":"git@github.com:baileywickham/307.git",
     "name": "react-assignment1",
     "version": "0.1.0",
     "private": true,
