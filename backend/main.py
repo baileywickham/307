@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, Response
 import flask_cors
 import random
 
@@ -48,9 +48,7 @@ def get_user(id):
     elif request.method == 'DELETE':
         if id :
             users['users_list'] = list(filter(lambda x: x['id'] != id, users['users_list']))
-            resp = jsonify(success=True)
-            resp.status_code = 204
-            return resp
+            return Response(status=204)
 
 
 
