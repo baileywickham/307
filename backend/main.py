@@ -61,7 +61,6 @@ def get_users():
     if request.method == 'GET':
         search_username = request.args.get('name')
         if search_username :
-            # I forget how much I love using functional programming
             return list(filter(lambda x: x['name'] == search_username, users['users_list']))
         return users
 

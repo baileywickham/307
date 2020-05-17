@@ -58,7 +58,7 @@ class App extends Component {
             });
     }
 
-    makePostCall(character){
+    makePostCall(character) {
         return axios.post(backendurl + '/users', character)
             .then(function (response) {
                 return response.data;
